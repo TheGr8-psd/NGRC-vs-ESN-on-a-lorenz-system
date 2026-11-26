@@ -33,19 +33,19 @@ For Lorenz-63 with $d=3, k=2, s=1$, the entire feature space requires only **28 
 ## 2. Directory Layout
 
 ```text
-D:\BITS\4-1\SOP\
-├── src\
+NGRC-vs-ESN-on-a-lorenz-system/
+├── src/
 │   ├── __init__.py
 │   ├── systems.py       # Numerical integration (RK45) of Lorenz-63 & Rössler systems
 │   ├── esn.py           # Pure NumPy ESN (spectral radius scaling, washout, quadratic readout)
 │   ├── ngrc.py          # NGRC (Gauthier et al. 2021 polynomial delay features)
 │   ├── metrics.py       # Dynamical metrics: VPT (Lyapunov units), PSD, & Climate metrics
 │   └── plots.py         # Publication-quality 3D attractor, time-series divergence, & PSD plots
-├── experiments\
+├── experiments/
 │   └── run_benchmark.py # Main execution pipeline comparing ESN vs. NGRC
-├── tests\
+├── tests/
 │   └── test_benchmark.py# Comprehensive unit and integration test suite
-├── results\             # Benchmark figures and JSON/CSV metric reports
+├── results/             # Benchmark figures and JSON/CSV metric reports
 ├── requirements.txt     # Python dependencies
 └── README.md
 ```
