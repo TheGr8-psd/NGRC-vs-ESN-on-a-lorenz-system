@@ -12,11 +12,11 @@ $$\frac{dx}{dt} = \sigma (y - x)$$
 $$\frac{dy}{dt} = x (\rho - z) - y$$
 $$\frac{dz}{dt} = x y - \beta z$$
 
-With canonical chaotic parameters $\sigma = 10.0$, $\rho = 28.0$, $\beta = 8/3$, the system possesses a maximum Lyapunov exponent $\lambda_{\max} \approx 0.9056$, defining a characteristic Lyapunov timescale $T_{\lambda} = 1 / \lambda_{\max} \approx 1.104$ seconds.
+With canonical chaotic parameters $\sigma = 10.0$, $\rho = 28.0$, $\beta = 8/3$, the system possesses a maximum Lyapunov exponent $\lambda_{\max} \approx 0.9056$, defining a characteristic Lyapunov timescale $`T_{\lambda} = 1 / \lambda_{\max} \approx 1.104`$ seconds.
 
 ### Classical Echo State Networks (ESN)
 - Input standardization (zero mean, unit variance computed on training data) to prevent `tanh` saturation.
-- Leaky recurrent reservoir: $\mathbf{r}(t+1) = (1 - \alpha) \mathbf{r}(t) + \alpha \tanh(\mathbf{W}_{\text{res}} \mathbf{r}(t) + \mathbf{W}_{\text{in}} \mathbf{u}(t) + \mathbf{b})$ ($\alpha = 0.3$, `input_scaling = 0.25`).
+- Leaky recurrent reservoir: $`\mathbf{r}(t+1) = (1 - \alpha) \mathbf{r}(t) + \alpha \tanh(\mathbf{W}_{\text{res}} \mathbf{r}(t) + \mathbf{W}_{\text{in}} \mathbf{u}(t) + \mathbf{b})`$ ($\alpha = 0.3$, `input_scaling = 0.25`).
 - Echo State Property governed by spectral radius scaling $\rho(\mathbf{W}_{\text{res}}) = 0.90 < 1.0$.
 - Feature representation: Includes a quadratic state readout $[\mathbf{1}, \mathbf{r}(t), \mathbf{r}^2(t)]$ to capture nonlinear quadratic dependencies.
 - Readout optimization: Regularized Tikhonov Ridge Regression ($\beta = 10^{-3}$).
