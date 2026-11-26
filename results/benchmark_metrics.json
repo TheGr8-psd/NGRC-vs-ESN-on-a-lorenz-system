@@ -1,0 +1,46 @@
+{
+    "metadata": {
+        "system": "Lorenz-63",
+        "dt": 0.02,
+        "train_time": 100.0,
+        "test_time": 40.0,
+        "mle": 0.9056,
+        "seed": 42
+    },
+    "Classical_ESN": {
+        "vpt_lyap": 5.288704,
+        "vpt_time": 5.84,
+        "vpt_step": 292,
+        "rmse_1_lyap": 0.008970557944341604,
+        "rmse_overall": 11.349104615057804,
+        "psd_error_db2": 5.504404013645643,
+        "climate_mean_error": 1.5122393034443058,
+        "climate_std_error": 0.22302838951070722,
+        "climate_cov_rel_error": 0.05993396283707615,
+        "climate_mean_wasserstein": 0.8728234321027059,
+        "climate_skew_error": 0.3941168403722218,
+        "climate_kurt_error": 0.24329371124652088,
+        "train_time_sec": 0.2820349000000002,
+        "pred_time_sec": 0.0957397000000002,
+        "trainable_params": 3003,
+        "feature_dim": 1001
+    },
+    "NGRC": {
+        "vpt_lyap": 5.216256,
+        "vpt_time": 5.76,
+        "vpt_step": 288,
+        "rmse_1_lyap": 0.036737830383789465,
+        "rmse_overall": 11.954878775263044,
+        "psd_error_db2": 3.3068771569549766,
+        "climate_mean_error": 2.8735844061174247,
+        "climate_std_error": 0.2095409698645204,
+        "climate_cov_rel_error": 0.08764894296062202,
+        "climate_mean_wasserstein": 1.5987279851449607,
+        "climate_skew_error": 0.6739111139754107,
+        "climate_kurt_error": 0.16457592857438846,
+        "train_time_sec": 0.2585204000000001,
+        "pred_time_sec": 0.10471679999999939,
+        "trainable_params": 84,
+        "feature_dim": 28
+    }
+}
